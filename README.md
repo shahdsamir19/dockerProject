@@ -10,5 +10,7 @@ docker-compose up -d --build
 docker exec -it flask_web bash
 apt update && apt install -y postgresql-client
 psql -h db -U myuser -d mydb
+docker login
+docker push shahdsamir/nginx-palestine
 
 
